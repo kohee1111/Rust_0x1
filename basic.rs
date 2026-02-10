@@ -38,4 +38,15 @@ fn main(){
     let name1: String = ret_string() ; 
     println!("Your name is :{:?}" , name1) ;
 }
+----------------------------------------------------------------------------------------------------------------------
+fn main(){
 
+    let name1 = String::from("Dibbo") ; 
+    let name2 = name1.clone() ; 
+    {
+        let name2 = name1.clone() ; 
+        println!("Name 2 is {:?}" , name2) ;
+        println!("Scope has ended") ;
+    }
+    println!("name 2 is {:?}" , name2)
+}
