@@ -23,4 +23,19 @@ fn main(){
     name.push_str(", kohee")  ; 
     println!("Your name is :{:?}" , name) ;
 }
-//
+--------------------------------simple example(learning return) 
+fn ret_string() -> String{
+
+    return "Dibbo".to_string()  ;
+}
+fn ret_str()-> &'static str{
+
+    return "kohee"  ;
+}
+fn main(){
+    let name2 : &'static str  = ret_str() ; 
+    println!("Name2 is {:?} " , name2) ;
+    let name1: String = ret_string() ; 
+    println!("Your name is :{:?}" , name1) ;
+}
+
